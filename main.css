@@ -1,0 +1,72 @@
+
+html, body{
+	background-color: black;
+	color: black;
+}
+h1{
+	width: 100%;
+	font-color: white;
+	color: white;
+}
+
+.clipbox{
+	align-items:center;
+	width: 100%;
+	display: inline-block;
+  text-align: center;
+}
+#twitch-embed{
+	align-items:center;
+	width: 100%;
+	display: inline-block;
+  text-align: center;
+}
+h2{
+	color: white;
+}
+h3{
+	color: white;
+}
+.logo{
+	border-radius: 50%;
+	width: 65px;
+	height: 65px;
+	display:block;
+    margin:auto;
+    border:5px solid #2ECC71;
+}
+.channel{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+vertical-align: middle;
+}
+.viewers{
+	width: 100%;
+}
+.channel-card{
+	padding: 10px;
+	padding-left: 0px;
+}
+.logo-div{
+	width: 100%;
+}
+.channel-list{
+	width: 30%;
+
+}
+.online-btn{
+	background-color: #2ECC71;
+}
+.offline-btn{
+	background-color: #C0392B;
+}
+.offline-img{
+	border-radius: 50%;
+	width: 65px;
+	height: 65px;
+	display:block;
+    margin:auto;
+    border:5px solid #C0392B;
+    background-color: #C0392B;
+}
