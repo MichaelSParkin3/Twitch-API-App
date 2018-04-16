@@ -11,13 +11,16 @@
   <body>
 
   	<div class="container-fluid">
-      <h1>My Favsss</h1>
+      <h1 class="text-center">My Twitch Viewer</h1>
+
   		<div id="list" class="channel-list">
   			<div class="btn-group" role="group" aria-label="Basic example">
   <button type="button" class="btn btn-secondary online-btn">Online</button>
   <button type="button" class="btn btn-secondary offline-btn">Offline</button>
 </div>
-  		</div>>
+  		</div>
+      <script src="https://embed.twitch.tv/embed/v1.js"></script>
+      <div class="player embed-responsive-item"><div class="embed-responsive-item" id="twitch-embed"></div></div>
   	</div>
 
   </body>

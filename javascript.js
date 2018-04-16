@@ -9,12 +9,12 @@ $( document ).ready(function() {
         $.getJSON('https://wind-bow.glitch.me/twitch-api/streams/'+streamers[i], function(x) {
         	console.log(x);
         	if (x.stream != null) {
-                  
+
                   console.log(x.stream.stream_type);
                   if (x.stream.stream_type == "live") {
                   	console.log(x.stream.channel.display_name);
                   	online.push(x.stream.channel.display_name);
-                  	$( "#list" ).append('<div class="channel-card card-online row"><div class="logo-div col-md-4"><img class="logo text-center" src="'+x.stream.channel.logo+'" alt="Logo"></div><div class="channel-div col-md-4"><h2 class="channel text-center">'+x.stream.channel.display_name+'</h2></div><div class="viewers-div col-md-4"><h3 class="viewers text-center">Viewers: '+x.stream.viewers+'</h3></div></div>');
+                  	$( "#list" ).append('<button id='+x.stream.channel.display_name+' class="logo-div logo-btn" type="submit"><div id='+x.stream.channel.display_name+' class="channel-card card-online row"><div class="logo-div col-md-4"><img class="logo text-center" src="'+x.stream.channel.logo+'" alt="Submit"></div><div class="channel-div col-md-4"><h2 class="channel text-center">'+x.stream.channel.display_name+'</h2></div><div class="viewers-div col-md-4"><h3 class="viewers text-center">Viewers: '+x.stream.viewers+'</h3></div></div></button>');
 
                   }
 
@@ -28,9 +28,20 @@ $( document ).ready(function() {
                });
     }
 
+    $('body').on('click', '.logo-btn', function () {
+      alert(this.id);
+      new Twitch.Embed("twitch-embed", {
+        width: "100%",
+        height: "800",
+        layout: 'video',
+        channel: this.id
+      });
+      });
+
     $( ".offline-btn" ).click(function() {
   		$(".card-online").css("visibility", "hidden");
   		$(".card-offline").css("visibility", "visible");
+      console.log("pyah2");
 });
 
     $( ".online-btn" ).click(function() {
