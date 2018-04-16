@@ -7,6 +7,8 @@ h1{
 	width: 100%;
 	font-color: white;
 	color: white;
+	font-family: 'Gugi', cursive;
+	padding: 30px;
 }
 
 .clipbox{
@@ -23,9 +25,16 @@ h1{
 }
 h2{
 	color: white;
+	font-family: 'Gugi', cursive;
+	font-size: 30px;
 }
 h3{
 	color: white;
+	font-family: 'Gugi', cursive;
+	font-size: 20px;
+}
+.btn{
+	font-family: 'Gugi', cursive;
 }
 .logo{
 	border-radius: 50%;
@@ -58,9 +67,11 @@ vertical-align: middle;
 }
 .online-btn{
 	background-color: #2ECC71;
+	width: 50%;
 }
 .offline-btn{
 	background-color: #C0392B;
+	width: 50%;
 }
 .offline-img{
 	border-radius: 50%;
@@ -90,4 +101,28 @@ vertical-align: middle;
 	display: inline-block;
 	width: 69%;
 	height: 100%;
+
+}
+.btn-group{
+	width: 100%;
+}
+@media only screen and (max-width: 1590px) {
+
+h2{
+	font-size: 25px;
+}
+h3{
+	font-size: 15px;
+}
+
+}
+@media only screen and (max-width: 1328px) {
+
+.channel-list{
+	width: 100%;
+}
+.player{
+	width: 100%;
+}
+
 }

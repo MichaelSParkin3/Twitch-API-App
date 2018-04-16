@@ -14,7 +14,7 @@ $( document ).ready(function() {
                   if (x.stream.stream_type == "live") {
                   	console.log(x.stream.channel.display_name);
                   	online.push(x.stream.channel.display_name);
-                  	$( "#list" ).append('<button id='+x.stream.channel.display_name+' class="logo-div logo-btn" type="submit"><div id='+x.stream.channel.display_name+' class="channel-card card-online row"><div class="logo-div col-md-4"><img class="logo text-center" src="'+x.stream.channel.logo+'" alt="Submit"></div><div class="channel-div col-md-4"><h2 class="channel text-center">'+x.stream.channel.display_name+'</h2></div><div class="viewers-div col-md-4"><h3 class="viewers text-center">Viewers: '+x.stream.viewers+'</h3></div></div></button>');
+                  	$( "#list" ).append('<button id='+x.stream.channel.display_name+' class="logo-div logo-btn animated pulse" type="submit"><div id='+x.stream.channel.display_name+' class="channel-card card-online row"><div class="logo-div col-md-4"><img class="logo text-center" src="'+x.stream.channel.logo+'" alt="Submit"></div><div class="channel-div col-md-4"><h2 class="channel text-center">'+x.stream.channel.display_name+'</h2></div><div class="viewers-div col-md-4"><h3 class="viewers text-center">Viewers: '+x.stream.viewers+'</h3></div></div></button>');
 
                   }
 
@@ -32,7 +32,7 @@ $( document ).ready(function() {
       alert(this.id);
       new Twitch.Embed("twitch-embed", {
         width: "100%",
-        height: "800",
+        height: 700,
         layout: 'video',
         channel: this.id
       });
