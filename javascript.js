@@ -48,14 +48,14 @@ $( document ).ready(function() {
       });
       //make online streams hidden and offline streams visible
     $( ".offline-btn" ).click(function() {
-  		$(".card-online").css("visibility", "hidden");
-  		$(".card-offline").css("visibility", "visible");
+  		$(".card-online").css("display", "none");
+  		$(".card-offline").css("display", "flex");
       console.log("pyah2");
 });
   //make offline streams hidden and online streams visible
     $( ".online-btn" ).click(function() {
-  		$(".card-offline").css("visibility", "hidden");
-  		$(".card-online").css("visibility", "visible");
+  		$(".card-offline").css("display", "none");
+  		$(".card-online").css("display", "flex");
 });
 
 });
